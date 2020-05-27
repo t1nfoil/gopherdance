@@ -20,12 +20,35 @@ if it looks good, run
 
 the frames.go file, convert the fmt.Printf("") statements to a string array, use your text editors column edit function (shift + right click in sublime) to easily edit the file into this format:
 
-```var animationFrames = []string {
+```
+   var animationFrames = []string {
        "",
        "",
        "",
-   }```
+   }
+ ```
    
+replace the "" with the ansi-escaped Printf strings that pixterm generates.. you should now have a string array of each animation frame. 
+
+To figure out your individual frame sizes.. use a helper function such as
+
+```
+   func drawFrameIndex() {
+       for i,v := range animationFrames {
+          fmt.Printf("%d %v",i,v)
+       }
+   }
+```
+
+Then run it and it will print out all the frames, with the index values.. figure out the start/end ranges of each frame (I do it by hand but I suppose you could do it programmatically)..
+
+as for the rest.. check out the code to see how it draws the frames based on the counters. It just does a lookup on the initial index and adds the frame length, and draws it at the l,c (line,column or x,y) on the terminal.
+
+
+
+
+
+
 
 
 
