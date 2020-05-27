@@ -6,7 +6,8 @@ download and compile pixterm --> https://github.com/eliukblau/pixterm
 
 then find your image, split it into the individual frames (gif2jpeg or whatever tool you want to use)
 
-use pixterm to display a frame in your terminal... where frame.jpg is on of your image frames
+use pixterm to display a frame in your terminal... where frame.jpg is on of your image frames such as:
+
 ```./pixterm -s 2 -tc 25 -tr 25 frame.jpg```
 
 if it looks good, run
