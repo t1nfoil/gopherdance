@@ -12,7 +12,9 @@ use pixterm to display a frame in your terminal... where frame.jpg is on of your
 if it looks good, run
 
 ```./pixterm -go -s 2 -tc 25 -tr 25 frame1.jpg >> frames.go```
+
 ```./pixterm -go -s 2 -tc 25 -tr 25 frame2.jpg >> frames.go```
+
 .. run the command for each frame in your animation, it saves it all in the frames.go file..
 
 the frames.go file, convert the fmt.Printf("") statements to a string array, use your text editors column edit function (shift + right click in sublime) to easily edit the file into this format:
