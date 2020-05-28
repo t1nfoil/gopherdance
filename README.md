@@ -1,5 +1,5 @@
 # gopherdance
-some dancing gophers in your terminal, my followup to terminalman..
+some dancing gophers in your terminal, my followup to ![terminalman](https://github.com/80at8/terminalman)..
 ![dancing gophers](https://github.com/80at8/gopherdance/blob/master/gopherdance.gif)
 
 heres how I make these files.. find a nice image, or animated gif that you want to use in your terminal.
