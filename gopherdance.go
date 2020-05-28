@@ -2732,7 +2732,6 @@ func init() {
 	}
 }
 
-
 // draw a gopher
 func drawGopherAtLC(l, c int, done chan bool, gopherTicker time.Ticker) {
 	fs := []int{0, 22, 44, 66, 88, 110, 132, 154, 176, 198, 220, 242, 264, 286, 308, 330, 352, 374, 396, 418, 440, 462, 484, 506}
@@ -2740,9 +2739,11 @@ func drawGopherAtLC(l, c int, done chan bool, gopherTicker time.Ticker) {
 	x := 0
 	isForward := true
 
+	fmt.Print("\033[?25l")
 	for {
 		select {
 		case <-done:
+			fmt.Print("\033[?25h")
 			return
 
 		case <-gopherTicker.C:
